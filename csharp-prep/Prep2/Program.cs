@@ -3,7 +3,7 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {
+    {   //This comment is just to create a change so I can commit this code with a new message.
         Console.Write("What is your grade percentage? >%");
         //I found out that ctrl f2 also changes printed instances not just variable names.
         string gradeValue = Console.ReadLine();
