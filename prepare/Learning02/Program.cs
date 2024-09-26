@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning02 World!");
+        Job job1= new Job("Microsoft", "Software engineer",2019, 2022);
+        job1.Display();
     }
 }
