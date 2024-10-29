@@ -2,22 +2,19 @@ using System;
 
 class Program
 {
-static void Main(string[] args)
-{
-    // Previous code for Assignment and MathAssignment
-    Assignment simpleAssignment = new Assignment("Samuel Bennett", "Multiplication");
-    Console.WriteLine(simpleAssignment.GetSummary());
+    static void Main(string[] args)
+    {
+        // Create a base "Assignment" object
+        Assignment a1 = new Assignment("Albert Einstein", "Quantum Physics");
+        Console.WriteLine(a1.GetSummary());
 
-    MathAssignment mathAssignment = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
-    Console.WriteLine(mathAssignment.GetSummary());
-    Console.WriteLine(mathAssignment.GetHomeworkList());
+        // Now create the derived class assignments
+        MathAssignment a2 = new MathAssignment("Stephen Hawking", "Basic Addition", "8.3", "9-15");
+        Console.WriteLine(a2.GetSummary());
+        Console.WriteLine(a2.GetHomeworkList());
 
-    // Create a WritingAssignment object
-    WritingAssignment writingAssignment = new WritingAssignment("Mary Johnson", "Ancient History", "The Rise of the Roman Empire");
-
-    
-    Console.WriteLine(writingAssignment.GetSummary());
-    Console.WriteLine(writingAssignment.GetWritingInformation());
-}
-
+        WritingAssignment a3 = new WritingAssignment("Bill Gates", "Coding in C", "Basic OS");
+        Console.WriteLine(a3.GetSummary());
+        Console.WriteLine(a3.GetWritingInformation());
+    }
 }
